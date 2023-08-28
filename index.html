@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lam Gà Muối</title>
+    <link rel="icon" href="image/ava.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+    <header>
+        <div class="grid wide header__main">
+            <div class="row">
+                <div class="col c-2">
+                    <div class="header__main-logo">
+                        <a href="#"><div class="header__main-logo__img">LAM GÀ MUỐI</div></a>
+                    </div>
+                </div>
+                <div class="col c-4 c-o-5">
+                    <nav class="header__main-nav">
+                        <ul class="header__main-nav__list">
+                            <li class="header__main-nav__list__item">
+                                <a href="#" class="header__main-nav__list__item--link" id="underlined">Trang chủ</a>
+                            </li>
+                            <li class="header__main-nav__list__item">
+                                <a href="#" class="header__main-nav__list__item--link down" id="underlined">Sản phẩm
+                                    <div class="header__main-nav__menu">
+                                        <ul class="header__main-nav__menu__list">
+                                            <li class="header__main-nav__menu__list__item">Gà nguyên con</li>
+                                            <li class="header__main-nav__menu__list__item">Gà nửa con</li>
+                                            <li class="header__main-nav__menu__list__item">Chân gà</li>
+                                            <li class="header__main-nav__menu__list__item">Tràng trứng</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header__main-nav__list__item">
+                                <a href="#" class="header__main-nav__list__item--link" id="underlined">Khuyến mãi</a>
+                            </li>
+                            <li class="header__main-nav__list__item">
+                                <a href="#" class="header__main-nav__list__item--link" id="underlined">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col c-1">
+                    <div class="header__main-right">
+                        <div class="header__main-cart__icon" number="12" data-src="image/cart.png"></div>
+                        <div class="header__main-avatar__icon" data-src="image/ava.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slide" data-src="image/slide1.jpg">
+        <div class="slide__text">
+            <h3 class="slide__text-title">Gà Ủ Muối Hoa Tiêu</h3>
+            <p class="slide__text-p">Chuyên gà ủ muối thảo mộc số 1 Hà Thành sỉ lẻ toàn quốc cam kết chất lượng và uy tín đặt lên hàng đầu</p>
+            <button class="slide__text-button">Liên hệ</button>
+        </div>
+        <div class="slide__img"></div>
+    </div>
+    <div class="grid wide product padding__main">
+        <div class="row">
+            <div class="col c-4">
+                <div class="product__main">
+                    <div class="product__main-img" data-src="image/product.png"></div>
+                    <h3 class="product__main-name">Gà nguyên con</h3>
+                    <p class="product__main-p">Set gà ủ muối hoa tiêu nguyên con + nước chấm thần thánh + muối chấm</p>
+                    <button class="product__main-button" onclick="orderX('flex')">Đặt hàng</button>
+                </div>
+            </div>
+            <div class="col c-4">
+                <div class="product__main">
+                    <div class="product__main-img" data-src="image/product2.png"></div>
+                    <h3 class="product__main-name">Chân gà bé cháy</h3>
+                    <p class="product__main-p">Set chân gà ủ muối + nước chấm thần thánh + muối chấm</p>
+                    <button class="product__main-button" onclick="orderX('flex')">Đặt hàng</button>
+                </div>
+            </div>
+            <div class="col c-4">
+                <div class="product__main">
+                    <div class="product__main-img" data-src="image/product3.png"></div>
+                    <h3 class="product__main-name">Tràng trứng ú nụ</h3>
+                    <p class="product__main-p">Set tràng trúng 500g + nước chấm thần thánh + muối chấm</p>
+                    <button class="product__main-button" onclick="orderX('flex')">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="order">
+        <span class="order--after" onclick="orderX('none')"></span>
+        <div class="order__img">
+            <div class="order__img-main" data-src="image/product__main.jpg"></div>
+            <div class="order__img-support">
+                <div class="order__img-support__item"data-src="image/product__support.jpg"></div>
+                <div class="order__img-support__item"data-src="image/product__support2.jpg"></div>
+                <div class="order__img-support__item"data-src="image/product__support3.jpg"></div>
+                <div class="order__img-support__item"data-src="image/product__support4.jpg"></div>
+            </div>
+        </div>
+        <div class="order__info">
+            <div class="order__info-name">
+                <span class="order__info-name__hot">Hot</span>
+                <h4 class="order__info-name__main">Gà ủ muối nguyên con</h4>
+            </div>
+            <div class="order__info-feedback">
+                <div class="order__info-feedback__star">
+                    <span class="order__info-feedback__star--number">4.9</span>
+                    <span class="order__info-feedback__star--item" id="star__on"></span>
+                    <span class="order__info-feedback__star--item" id="star__on"></span>
+                    <span class="order__info-feedback__star--item" id="star__on"></span>
+                    <span class="order__info-feedback__star--item" id="star__on"></span>
+                    <span class="order__info-feedback__star--item"></span>
+                </div>
+                <div class="order__info-feedback__review">
+                    <span class="order__info-feedback__review--number">587</span>
+                    <span class="order__info-feedback__review--main">lượt đánh giá</span>
+                </div>
+                <div class="order__info-feedback__sold">
+                    <span class="order__info-feedback__sold--number">56686</span>
+                    <span class="order__info-feedback__sold--main">đã bán</span>
+                </div>
+            </div>
+            <div class="order__info-sale">
+                <div class="order__info-sale__icon">FLAST SALE</div>
+                <div class="order__info-sale__note">5/8-9/11</div>
+            </div>
+            <div class="order__info-price">
+                <div class="order__info-price__cost">
+                    <div class="order__info-price__cost--main">250.000</div>
+                    <div class="order__info-price__cost--unit">vnđ</div>
+                </div>
+                <div class="order__info-price__sale">
+                    <div class="order__info-price__sale--main">150.000</div>
+                    <div class="order__info-price__sale--unit">vnđ</div>
+                </div>
+                <span class="order__info-price__tag">
+                    <div class="order__info-price__tag--title">sale</div>
+                    <div class="order__info-price__tag--main" data-unit="%">40</div>
+                </span>
+            </div>
+            <div class="order__info-introduce">
+                <h5 class="order__info-introduce__title">Giới thiệu</h5>
+                <p class="order__info-introduce__p">Được làm từ 100% gà sạch được tuyển chọn khắt khe sàng lọc kĩ càng kết hợp với hơn 20 loại thảo mộc thiên nhiên được nấu bằng công thức độc quyền của LAM GÀ MUỐI tất cả hòa trộn tạo nên hương vị gà ủ muối thảo muộc giữ nguyên vị gà tuyển chọn dai mềm béo ngậy mà vẫn đạm vị thảo mộc thiên nhiên. Chúng tôi tự hào gửi tới tay các bạn gà thảo mộc với hương vị và chất lượng được đảm bảo</p>
+            </div>
+            <div class="order__info-transport">
+                <h5 class="order__info-transport__title">Vận chuyển</h5>
+                <p class="order__info-transport__icon"></p>
+                <p class="order__info-transport__p">Nhận ship toàn bộ khu vực miền bắc <br>Miễn phí vận chuyển nội thành Hà Nội</p>
+            </div>
+            <div class="order__info-type">
+                <h5 class="order__info-type__title">Size</h5>
+                <button class="order__info-type__item">S(1kg-1.5kg)</button>
+                <button class="order__info-type__item">M(2kg-4kg)</button>
+                <button class="order__info-type__item">L(5kg-10kg)</button>
+            </div>
+            <div class="order__info-quantity">
+                <h5 class="order__info-quantity__title">Số lượng</h5>
+                <div class="order__info-quantity__choice">
+                    <button class="order__info-quantity__choice--reduce">-</button>
+                    <span class="order__info-quantity__choice--number">1</span>
+                    <button class="order__info-quantity__choice--increase">+</button>
+                </div>
+                <div class="order__info-quantity__available">
+                    <div class="order__info-quantity__available--number">968</div>
+                    <div class="order__info-quantity__available--note">sản phẩm có sẵn</div>
+                </div>
+            </div>
+            <div class="order__info-button">
+                <button class="order__info-button__add">
+                    <div class="order__info-button__add--icon"></div>
+                    Thêm vào giỏ hầng
+                </button>
+                <button class="order__info-button__buy">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+
+
+
+    <script src="javascript/lazyload.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
