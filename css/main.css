@@ -219,7 +219,7 @@ header{
     top: 5rem;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
+    display: none;
 }
 .order--after{
     display: block;
@@ -491,7 +491,6 @@ header{
 .order__info-button{
     display: flex;
     align-items: center;
-    margin-top: 40px;
 }
 .order__info-button__add{
     font-size: 1.8rem;
